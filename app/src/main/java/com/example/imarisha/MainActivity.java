@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if(requestCode == SplashScreenBuilder.SPLASH_SCREEN_FINISHED) {
             if(resultCode == RESULT_OK) {
-                Toast.makeText(this, "SplashScreen finished", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Every Life Matters", Toast.LENGTH_SHORT).show();
             } else if(resultCode == RESULT_CANCELED) {
                 Toast.makeText(this, "SplashScreen finished, but canceled", Toast.LENGTH_SHORT).show();
             }
