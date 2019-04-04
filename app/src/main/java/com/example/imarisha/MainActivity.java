@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.mrgames13.jimdo.splashscreen.App.SplashScreenBuilder;
@@ -22,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
                 .skipImage(true)
                 .show();
 
-        Button button_login = findViewById(R.id.button_leader);
-        button_login.setOnClickListener(new View.OnClickListener() {
+        ImageView imageview1 = findViewById(R.id.button_leader);
+        imageview1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // start the leader activity
@@ -32,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-        Button button_worker = findViewById(R.id.button_health);
+        ImageView button_worker = findViewById(R.id.button_health);
         button_worker.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
