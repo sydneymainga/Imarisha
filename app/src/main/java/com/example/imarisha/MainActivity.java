@@ -22,19 +22,16 @@ public class MainActivity extends AppCompatActivity {
                 .skipImage(true)
                 .show();
 
-        /**Button restart_app = findViewById(R.id.restart_app);
-        restart_app.setOnClickListener(new View.OnClickListener() {
+        Button button_login = findViewById(R.id.button2);
+        button_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Restart app
-                Intent i = getBaseContext().getPackageManager().getLaunchIntentForPackage(getBaseContext().getPackageName());
-                i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                // start the leader activity
+                Intent i = new Intent(getApplicationContext(),Login_leader.class);
                 startActivity(i);
-                overridePendingTransition(0, 0);
-                finish();
+
             }
-        });**/
+        });
     }
 
     @Override
