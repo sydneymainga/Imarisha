@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Imarisha</string>
-    <string name="life">Every Life Matters</string>
+    <string name="life">COMMUNITY HEALTH WORKER</string>
+    <string name="life2">COMMUNITY LEADER</string>
     <string name="button_health">Health Worker</string>
     <string name="button_leader">Leader</string>
     <string name="title_activity_login_leader">Sign in</string>
