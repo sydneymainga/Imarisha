@@ -19,10 +19,10 @@
         app:layout_constraintVertical_bias="0.873" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_health"
         android:layout_width="176dp"
         android:layout_height="92dp"
-        android:text="@string/button_1"
+        android:text="@string/button_health"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.028"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -31,10 +31,10 @@
         app:layout_constraintVertical_bias="0.429" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button_leader"
         android:layout_width="170dp"
         android:layout_height="92dp"
-        android:text="@string/button_2"
+        android:text="@string/button_leader"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.901"
         app:layout_constraintLeft_toLeftOf="parent"

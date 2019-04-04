@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
                 .skipImage(true)
                 .show();
 
-        Button button_login = findViewById(R.id.button2);
+        Button button_login = findViewById(R.id.button_leader);
         button_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -32,6 +32,16 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        Button button_worker = findViewById(R.id.button_health);
+        button_worker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // start the Health worker activity
+                Intent i = new Intent(getApplicationContext(), Login_health.class);
+                startActivity(i);
+            }
+        });
+
     }
 
     @Override

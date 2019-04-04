@@ -15,8 +15,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Login_health"
+            android:label="@string/title_activity_login_health"></activity>
+        <activity
             android:name=".Login_leader"
-            android:label="@string/title_activity_login_leader"></activity>
+            android:label="@string/title_activity_login_leader" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
