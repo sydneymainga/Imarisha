@@ -91,6 +91,7 @@ public class Login_health extends AppCompatActivity implements LoaderCallbacks<C
             }
         });
 
+
         mLoginFormView = findViewById(R.id.login_form);
         mProgressView = findViewById(R.id.login_progress);
     }
@@ -145,7 +146,12 @@ public class Login_health extends AppCompatActivity implements LoaderCallbacks<C
      * errors are presented and no actual login attempt is made.
      */
     private void attemptLogin() {
+
+
         if (mAuthTask != null) {
+
+
+
             return;
         }
 
@@ -188,6 +194,7 @@ public class Login_health extends AppCompatActivity implements LoaderCallbacks<C
             showProgress(true);
             mAuthTask = new UserLoginTask(email, password);
             mAuthTask.execute((Void) null);
+
         }
     }
 
@@ -334,9 +341,11 @@ public class Login_health extends AppCompatActivity implements LoaderCallbacks<C
             showProgress(false);
 
             if (success) {
-                Intent i = new Intent(getApplicationContext(),health_leader_activity.class);
+
+                Intent i = new Intent(getApplicationContext(),health_volunteer.class);
                 startActivity(i);
                 finish();
+
             } else {
                 mPasswordView.setError(getString(R.string.error_incorrect_password));
                 mPasswordView.requestFocus();
