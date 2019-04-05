@@ -4,10 +4,10 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.example.imarisha.HealthWorker.Login_health;
 import com.mrgames13.jimdo.splashscreen.App.SplashScreenBuilder;
 
 public class MainActivity extends AppCompatActivity {
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // start the leader activity
-                Intent i = new Intent(getApplicationContext(),Login_leader.class);
+                Intent i = new Intent(getApplicationContext(), Login_health.class);
                 startActivity(i);
 
             }
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // start the Health worker activity
-                Intent i = new Intent(getApplicationContext(), Login_health.class);
+                Intent i = new Intent(getApplicationContext(), Login_leader.class);
                 startActivity(i);
             }
         });
