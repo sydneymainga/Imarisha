@@ -3,18 +3,14 @@ package com.example.imarisha.HealthWorker;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.design.button.MaterialButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.CardView;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
-import android.widget.ScrollView;
-import android.widget.Toast;
 
 import com.example.imarisha.Data.UserType;
 import com.example.imarisha.R;
@@ -85,7 +81,7 @@ public class Login_health extends AppCompatActivity implements OnClickListener {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(Login_health.this,ReportCase.class));
+                startActivity(new Intent(Login_health.this, HealthMenu.class));
                 finish();
             }
         }, 500);

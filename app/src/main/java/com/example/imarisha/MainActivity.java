@@ -5,11 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.example.imarisha.Data.UserType;
 import com.example.imarisha.HealthWorker.Login_health;
-import com.example.imarisha.HealthWorker.ReportCase;
+import com.example.imarisha.HealthWorker.HealthMenu;
 import com.mrgames13.jimdo.splashscreen.App.SplashScreenBuilder;
 
 public class MainActivity extends AppCompatActivity {
@@ -57,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
             }
             UserType userType = new UserType(MainActivity.this);
             if(userType.isNurse()){
-                Intent i = new Intent(getApplicationContext(), ReportCase.class);
+                Intent i = new Intent(getApplicationContext(), HealthMenu.class);
                 startActivity(i);
                 //No coming back here in future
                 finish();
