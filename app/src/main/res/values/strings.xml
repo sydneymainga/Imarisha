@@ -24,4 +24,6 @@
     <string name="action_play_next">Play Next</string>
     <string name="backdrop_title">LOVE MUSIC</string>
     <string name="backdrop_subtitle">This season top 20 albums</string>
+    <string name="google_maps_api_key">AIzaSyBN4oa0uM6qDKaZWD6OckjoaBJbQ6kcNaM</string>
+
 </resources>
