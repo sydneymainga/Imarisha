@@ -7,7 +7,9 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.example.imarisha.Data.UserType;
 import com.example.imarisha.HealthWorker.Login_health;
+import com.example.imarisha.HealthWorker.ReportCase;
 import com.mrgames13.jimdo.splashscreen.App.SplashScreenBuilder;
 
 public class MainActivity extends AppCompatActivity {
@@ -49,12 +51,19 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if(requestCode == SplashScreenBuilder.SPLASH_SCREEN_FINISHED) {
             if(resultCode == RESULT_OK) {
-                Toast.makeText(this, "Every Life Matters", Toast.LENGTH_SHORT).show();
-            } else if(resultCode == RESULT_CANCELED) {
-                Toast.makeText(this, "SplashScreen finished, but canceled", Toast.LENGTH_SHORT).show();
-            }
-        }
 
+            } else if(resultCode == RESULT_CANCELED) {
+
+            }
+            UserType userType = new UserType(MainActivity.this);
+            if(userType.isNurse()){
+                Intent i = new Intent(getApplicationContext(), ReportCase.class);
+                startActivity(i);
+                //No coming back here in future
+                finish();
+            }
+
+        }
 
     }
 }

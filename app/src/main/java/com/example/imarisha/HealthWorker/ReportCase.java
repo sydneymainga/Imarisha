@@ -10,6 +10,7 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.imarisha.Data.UserType;
 import com.example.imarisha.R;
 
 public class ReportCase extends AppCompatActivity {
@@ -26,6 +27,8 @@ public class ReportCase extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_report_case);
         initView();
+
+
     }
 
     private void initView() {

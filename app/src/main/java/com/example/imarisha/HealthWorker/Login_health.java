@@ -6,6 +6,7 @@ import android.os.Handler;
 import android.support.design.button.MaterialButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatButton;
+import android.support.v7.widget.CardView;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -15,6 +16,7 @@ import android.widget.ProgressBar;
 import android.widget.ScrollView;
 import android.widget.Toast;
 
+import com.example.imarisha.Data.UserType;
 import com.example.imarisha.R;
 
 /**
@@ -25,7 +27,7 @@ public class Login_health extends AppCompatActivity implements OnClickListener {
     private EditText email;
     private EditText password;
     private AppCompatButton email_sign_in_button;
-    private ScrollView login_form;
+    private CardView login_form;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +43,7 @@ public class Login_health extends AppCompatActivity implements OnClickListener {
         email_sign_in_button =  findViewById(R.id.email_sign_in_button);
 
         email_sign_in_button.setOnClickListener(this);
-        login_form = (ScrollView) findViewById(R.id.login_form);
+        login_form =  findViewById(R.id.login_form);
 
     }
 
@@ -73,15 +75,21 @@ public class Login_health extends AppCompatActivity implements OnClickListener {
         login_progress.setVisibility(View.VISIBLE);
 
         login_form.setVisibility(View.GONE);
-        // TODO validate success, do something
+        // Set usertype to isNurse
+
+        UserType user = new UserType(Login_health.this);
+        user.setisNurse();
+        user.SetUserName(emailString);
 
         //Emulate login Process
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 startActivity(new Intent(Login_health.this,ReportCase.class));
+                finish();
             }
         }, 500);
+
 
 
     }
