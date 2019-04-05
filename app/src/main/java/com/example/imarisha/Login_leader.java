@@ -3,6 +3,7 @@ package com.example.imarisha;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -37,7 +38,7 @@ import static android.Manifest.permission.READ_CONTACTS;
 /**
  * A login screen that offers login via email/password.
  */
-public class Login_leader extends AppCompatActivity implements LoaderCallbacks<Cursor> {
+public class Login_leader<leader_report> extends AppCompatActivity implements LoaderCallbacks<Cursor> {
 
     /**
      * Id to identity READ_CONTACTS permission request.
@@ -333,6 +334,9 @@ public class Login_leader extends AppCompatActivity implements LoaderCallbacks<C
             showProgress(false);
 
             if (success) {
+                Intent i = new Intent(getApplicationContext(),Leader_activity.class);
+                startActivity(i);
+
                 finish();
             } else {
                 mPasswordView.setError(getString(R.string.error_incorrect_password));

@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "1023603599765",
+    "firebase_url": "https://imarisha-3aa3d.firebaseio.com",
+    "project_id": "imarisha-3aa3d",
+    "storage_bucket": "imarisha-3aa3d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1023603599765:android:03cf576e7d4e301a",
+        "android_client_info": {
+          "package_name": "com.example.imarisha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1023603599765-kr3kqa15ciej9tfqmjc39sh8f0cdo6vq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.imarisha",
+            "certificate_hash": "49b60949072114f0b46b33ad2049391004a78645"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQKH0zuEFVFHQ_C1-MTpYSj3PBqfJP4do"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1023603599765-75s9tplm2omj3njcgqhihjfgjmprrtbh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
